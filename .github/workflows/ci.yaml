@@ -3,7 +3,7 @@
   pull_request:
     branches:
       - develop
-      
+
  jobs:
   check-application:
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@
         run: go test
 
       - name: Run Go App
-      - run: go run math.go
+        run: go run math.go
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
